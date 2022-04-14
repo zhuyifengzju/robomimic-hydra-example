@@ -1,0 +1,6 @@
+obs_randomizer_class: CropRandomizer
+obs_randomizer_kwargs:
+  crop_height: 76
+  crop_width: 76
+  num_crops: 1
+  pos_enc: false

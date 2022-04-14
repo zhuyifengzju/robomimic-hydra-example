@@ -1,0 +1,8 @@
+enabled: false
+hidden_dim: 400
+horizon: 10
+kwargs:
+  bidirectional: false
+num_layers: 2
+open_loop: false
+rnn_type: LSTM

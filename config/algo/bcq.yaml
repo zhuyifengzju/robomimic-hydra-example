@@ -1,0 +1,32 @@
+actor_layer_dims: [1024, 1024]
+
+defaults:
+  - modules@vae: vae
+  - modules@rnn: rnn
+  - modules@gaussian: gaussian
+  - modules@gmm: gmm
+  - loss: default
+  - optim@optim_params.policy: adam
+  - optim@optim_params.critic: adam
+  - optim@optim_params.action_sampler: adam
+  - optim@optim_params.actor: adam
+  
+critic:
+  distributional:
+    enabled: false
+    num_atoms: 51
+  ensemble:
+    n: 2
+    weight: 0.75
+  layer_dims:
+  - 300
+  - 400
+  max_gradient_norm: null
+  num_action_samples: 10
+  num_action_samples_rollout: 100
+  use_huber: false
+  value_bounds: null
+discount: 0.99
+infinite_horizon: false
+n_step: 1
+target_tau: 0.0005

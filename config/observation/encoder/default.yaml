@@ -1,0 +1,23 @@
+
+
+defaults:
+  - modules@rgb:
+      - visual_core
+      - crop_randomizer
+  - modules@depth:
+      - visual_core
+      - crop_randomizer
+  - modules@scan:
+      - scan_core
+      - crop_randomizer
+  - modules@low_dim: null
+
+# rgb:
+#   - /module/visual_core
+
+# defaults:
+#   - modules@rgb: visual_core
+#   - modules@depth: visual_core
+#   - modules@scan: scan_core
+#   - modules@low_dim: null
+

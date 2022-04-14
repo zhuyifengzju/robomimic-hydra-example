@@ -1,0 +1,11 @@
+actor_layer_dims: [1024, 1024]
+
+defaults:
+  - modules@vae: vae
+  - modules@rnn: rnn
+  - modules@gaussian: gaussian
+  - modules@gmm: gmm
+  - loss: default
+  - optim@optim_params.policy: adam
+
+  

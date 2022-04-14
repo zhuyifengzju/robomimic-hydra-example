@@ -1,0 +1,22 @@
+decoder:
+  is_conditioned: true
+  reconstruction_sum_across_elements: false
+decoder_layer_dims: [300, 400]
+enabled: false
+encoder_layer_dims: [300, 400]
+kl_weight: 1.0
+latent_clip: null
+latent_dim: 14
+prior:
+  categorical_dim: 10
+  categorical_gumbel_softmax_hard: false
+  categorical_init_temp: 1.0
+  categorical_min_temp: 0.3
+  categorical_temp_anneal_step: 0.001
+  gmm_learn_weights: false
+  gmm_num_modes: 10
+  is_conditioned: false
+  learn: false
+  use_categorical: false
+  use_gmm: false
+prior_layer_dims: [300, 400]

@@ -1,0 +1,6 @@
+learning_rate:
+  decay_factor: 0.1
+  epoch_schedule: []
+  initial: 0.0001
+regularization:
+  L2: 0.0

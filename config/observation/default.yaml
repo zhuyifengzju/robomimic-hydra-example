@@ -1,0 +1,4 @@
+
+defaults:
+  - encoder: default
+  - modalities: default

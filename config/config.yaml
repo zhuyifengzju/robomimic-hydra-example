@@ -1,0 +1,9 @@
+# @package _global_
+
+defaults:
+  - /algo: bc
+  - /observation: default
+  - /train: default
+  - /experiment: null
+
+

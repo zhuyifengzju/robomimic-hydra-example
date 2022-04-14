@@ -1,0 +1,13 @@
+obs:
+  low_dim: ["robot0_eef_pos",
+            "robot0_eef_quat",
+            "robot0_gripper_qpos"]
+  rgb: ["agentview_rgb", "robot0_eye_in_hand_image"]
+  depth: []
+  scan: []
+
+goal:
+  low_dim: []
+  rgb: []
+  depth: []
+  scan: []

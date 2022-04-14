@@ -1,0 +1,6 @@
+
+enabled: true
+low_noise_eval: true
+min_std: 0.0001
+num_modes: 5
+std_activation: softplus

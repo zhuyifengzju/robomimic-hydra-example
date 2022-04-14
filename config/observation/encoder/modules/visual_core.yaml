@@ -1,0 +1,15 @@
+core_class: VisualCore
+core_kwargs:
+  backbone_class: ResNet18Conv
+  backbone_kwargs:
+    input_coord_conv: false
+    pretrained: false
+  feature_dimension: 64
+  flatten: true
+  pool_class: SpatialSoftmax
+  pool_kwargs:
+    learnable_temperature: false
+    noise_std: 0.0
+    num_kp: 32
+    output_variance: false
+    temperature: 1.0

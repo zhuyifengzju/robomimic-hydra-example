@@ -1,0 +1,7 @@
+
+enabled: false
+fixed_std: false
+init_std: 0.1
+low_noise_eval: true
+min_std: 0.01
+std_activation: softplus

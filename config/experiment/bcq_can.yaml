@@ -1,0 +1,35 @@
+# @package _global_
+
+additional_envs: null
+env: null
+epoch_every_n_steps: 500
+keep_all_videos: false
+logging:
+  log_tb: true
+  terminal_output_to_txt: true
+name: "core_bcq_can_ph_image"
+render: false
+render_video: true
+rollout:
+  enabled: true
+  horizon: 400
+  n: 50
+  rate: 20
+  terminate_on_success: true
+  warmstart: 0
+save:
+  enabled: true
+  epochs: []
+  every_n_epochs: 20
+  every_n_seconds: null
+  on_best_rollout_return: false
+  on_best_rollout_success_rate: true
+  on_best_validation: false
+validate: true
+validation_epoch_every_n_steps: 50
+video_skip: 5
+
+defaults:
+  - override /algo: bcq
+
+algo.

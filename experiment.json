@@ -1,0 +1,33 @@
+{
+    "core_class": "ScanCore",
+    "core_kwargs": {
+        "feature_dimension": 64,
+        "flatten": true,
+        "pool_class": "SpatialSoftmax",
+        "pool_kwargs": {
+            "num_kp": 32,
+            "learnable_temperature": false,
+            "temperature": 1.0,
+            "noise_std": 0.0,
+            "output_variance": false
+        },
+        "conv_activation": "relu",
+        "conv_kwargs": {
+            "out_channels": [
+                32,
+                64,
+                64
+            ],
+            "kernel_size": [
+                8,
+                4,
+                2
+            ],
+            "stride": [
+                4,
+                2,
+                1
+            ]
+        }
+    }
+}
